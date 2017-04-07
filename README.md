@@ -1,11 +1,13 @@
-# api documentation for  [serve-favicon (v2.4.2)](https://github.com/expressjs/serve-favicon#readme)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-serve-favicon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-serve-favicon)
+# api documentation for  [serve-favicon (v2.4.2)](https://github.com/expressjs/serve-favicon#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-serve-favicon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-serve-favicon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-serve-favicon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-serve-favicon)
 #### favicon serving middleware with caching
 
 [![NPM](https://nodei.co/npm/serve-favicon.png?downloads=true)](https://www.npmjs.com/package/serve-favicon)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-serve_favicon_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-serve-favicon/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-serve-favicon%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
