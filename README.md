@@ -1,9 +1,14 @@
-# api documentation for  [serve-favicon (v2.4.2)](https://github.com/expressjs/serve-favicon#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-serve-favicon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-serve-favicon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-serve-favicon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-serve-favicon)
+# npmdoc-serve-favicon
+
+#### basic api documentation for  [serve-favicon (v2.4.2)](https://github.com/expressjs/serve-favicon#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-serve-favicon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-serve-favicon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-serve-favicon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-serve-favicon)
+
 #### favicon serving middleware with caching
 
-[![NPM](https://nodei.co/npm/serve-favicon.png?downloads=true)](https://www.npmjs.com/package/serve-favicon)
+[![NPM](https://nodei.co/npm/serve-favicon.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/serve-favicon)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-serve-favicon%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-serve-favicon/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-serve-favicon/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Douglas Christopher Wilson",
-        "email": "doug@somethingdoug.com"
+        "name": "Douglas Christopher Wilson"
     },
     "bugs": {
         "url": "https://github.com/expressjs/serve-favicon/issues"
@@ -63,13 +67,11 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "dougwilson",
-            "email": "doug@somethingdoug.com"
+            "name": "dougwilson"
         }
     ],
     "name": "serve-favicon",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/expressjs/serve-favicon.git"
@@ -80,19 +82,10 @@
         "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
         "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/"
     },
-    "version": "2.4.2"
+    "version": "2.4.2",
+    "bin": {}
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module serve-favicon](#apidoc.module.serve-favicon)
-
-
-
-# <a name="apidoc.module.serve-favicon"></a>[module serve-favicon](#apidoc.module.serve-favicon)
 
 
 
