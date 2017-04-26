@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/expressjs/serve-favicon#readme"
-
-    >serve-favicon (v2.4.2)</a>
+    <a href="https://github.com/expressjs/serve-favicon#readme">serve-favicon (v2.4.2)</a>
 </h1>
 <h4>favicon serving middleware with caching</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.serve-favicon">module serve-favicon</a><ol>
 
@@ -92,27 +85,27 @@
   var maxAge = calcMaxAge(opts.maxAge)
 
   if (!path) {
-    throw new TypeError(&#x27;path to favicon.ico is required&#x27;)
+    throw new TypeError('path to favicon.ico is required')
   }
 
   if (Buffer.isBuffer(path)) {
     icon = createIcon(copyBuffer(path), maxAge)
-  } else if (typeof path === &#x27;string&#x27;) {
+  } else if (typeof path === 'string') {
     path = resolveSync(path)
   } else {
-    throw new TypeError(&#x27;path to favicon.ico must be string or buffer&#x27;)
+    throw new TypeError('path to favicon.ico must be string or buffer')
   }
 
   return function favicon (req, res, next) {
-    if (parseUrl(req).pathname !== &#x27;/favicon.ico&#x27;) {
+    if (parseUrl(req).pathname !== '/favicon.ico') {
       next()
       return
     }
 
-    if (req.method !== &#x27;GET&#x27; &#x26;&#x26; req.method !== &#x27;HEAD&#x27;) {
-      res.statusCode = req.method === &#x27;OPTIONS&#x27; ? 200 : 405
-      res.setHeader(&#x27;Allow&#x27;, &#x27;GET, HEAD, OPTIONS&#x27;)
-      res.setHeader(&#x27;Content-Length&#x27;, &#x27;0&#x27;)
+    if (req.method !== 'GET' &amp;&amp; req.method !== 'HEAD') {
+      res.statusCode = req.method === 'OPTIONS' ? 200 : 405
+      res.setHeader('Allow', 'GET, HEAD, OPTIONS')
+      res.setHeader('Content-Length', '0')
       res.end()
       return
     }
@@ -141,3 +134,4 @@
     ]
 </div>
 </div>
+</body></html>

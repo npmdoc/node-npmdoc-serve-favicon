@@ -61,12 +61,77 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.serve-favicon">module serve-favicon</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.serve-favicon.serve-favicon">
+            function <span class="apidocSignatureSpan"></span>serve-favicon
+            <span class="apidocSignatureSpan">(path, options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.serve-favicon" id="apidoc.module.serve-favicon">module serve-favicon</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.serve-favicon.serve-favicon" id="apidoc.element.serve-favicon.serve-favicon">
+        function <span class="apidocSignatureSpan"></span>serve-favicon
+        <span class="apidocSignatureSpan">(path, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function favicon(path, options) {
+  var opts = options || {}
+
+  var icon // favicon cache
+  var maxAge = calcMaxAge(opts.maxAge)
+
+  if (!path) {
+    throw new TypeError(&#x27;path to favicon.ico is required&#x27;)
+  }
+
+  if (Buffer.isBuffer(path)) {
+    icon = createIcon(copyBuffer(path), maxAge)
+  } else if (typeof path === &#x27;string&#x27;) {
+    path = resolveSync(path)
+  } else {
+    throw new TypeError(&#x27;path to favicon.ico must be string or buffer&#x27;)
+  }
+
+  return function favicon (req, res, next) {
+    if (parseUrl(req).pathname !== &#x27;/favicon.ico&#x27;) {
+      next()
+      return
+    }
+
+    if (req.method !== &#x27;GET&#x27; &#x26;&#x26; req.method !== &#x27;HEAD&#x27;) {
+      res.statusCode = req.method === &#x27;OPTIONS&#x27; ? 200 : 405
+      res.setHeader(&#x27;Allow&#x27;, &#x27;GET, HEAD, OPTIONS&#x27;)
+      res.setHeader(&#x27;Content-Length&#x27;, &#x27;0&#x27;)
+      res.end()
+      return
+    }
+
+    if (icon) {
+      send(req, res, icon)
+      return
+    }
+
+    fs.readFile(path, function (err, buf) {
+      if (err) return next(err)
+      icon = createIcon(buf, maxAge)
+      send(req, res, icon)
+    })
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
